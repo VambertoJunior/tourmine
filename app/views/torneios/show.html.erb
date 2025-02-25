@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @torneio %>
+
+<div>
+  <%= link_to "Edit this torneio", edit_torneio_path(@torneio) %> |
+  <%= link_to "Back to torneios", torneios_path %>
+
+  <%= button_to "Destroy this torneio", @torneio, method: :delete %>
+</div>

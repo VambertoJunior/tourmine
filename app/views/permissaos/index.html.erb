@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Permissaos" %>
+
+<h1>Permissaos</h1>
+
+<div id="permissaos">
+  <% @permissaos.each do |permissao| %>
+    <%= render permissao %>
+    <p>
+      <%= link_to "Show this permissao", permissao %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New permissao", new_permissao_path %>

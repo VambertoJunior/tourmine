@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @permissao %>
+
+<div>
+  <%= link_to "Edit this permissao", edit_permissao_path(@permissao) %> |
+  <%= link_to "Back to permissaos", permissaos_path %>
+
+  <%= button_to "Destroy this permissao", @permissao, method: :delete %>
+</div>

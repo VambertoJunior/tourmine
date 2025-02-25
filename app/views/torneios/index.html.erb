@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Torneios" %>
+
+<h1>Torneios</h1>
+
+<div id="torneios">
+  <% @torneios.each do |torneio| %>
+    <%= render torneio %>
+    <p>
+      <%= link_to "Show this torneio", torneio %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New torneio", new_torneio_path %>
