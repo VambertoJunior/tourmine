@@ -12,12 +12,12 @@ class InscricaosTest < ApplicationSystemTestCase
 
   test "should create inscricao" do
     visit inscricaos_url
-    click_on "New inscricao"
+    click_on "Criar inscrição"
 
     fill_in "Participante", with: @inscricao.participante
     fill_in "Status", with: @inscricao.status
     fill_in "Torneio", with: @inscricao.torneio_id
-    click_on "Create Inscricao"
+    click_on "Criar inscrição"
 
     assert_text "Inscricao was successfully created"
     click_on "Back"
@@ -25,7 +25,7 @@ class InscricaosTest < ApplicationSystemTestCase
 
   test "should update Inscricao" do
     visit inscricao_url(@inscricao)
-    click_on "Edit this inscricao", match: :first
+    click_on "Edite esta inscrição", match: :first
 
     fill_in "Participante", with: @inscricao.participante
     fill_in "Status", with: @inscricao.status
@@ -38,7 +38,7 @@ class InscricaosTest < ApplicationSystemTestCase
 
   test "should destroy Inscricao" do
     visit inscricao_url(@inscricao)
-    click_on "Destroy this inscricao", match: :first
+    click_on "Destrua esta inscrição", match: :first
 
     assert_text "Inscricao was successfully destroyed"
   end

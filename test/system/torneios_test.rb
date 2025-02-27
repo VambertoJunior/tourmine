@@ -12,14 +12,14 @@ class TorneiosTest < ApplicationSystemTestCase
 
   test "should create torneio" do
     visit torneios_url
-    click_on "New torneio"
+    click_on "Criar torneio"
 
     fill_in "Data fim", with: @torneio.data_fim
     fill_in "Data inicio", with: @torneio.data_inicio
     fill_in "Descricao", with: @torneio.descricao
     fill_in "Nome", with: @torneio.nome
     fill_in "Organizador", with: @torneio.organizador
-    click_on "Create Torneio"
+    click_on "Criar torneio"
 
     assert_text "Torneio was successfully created"
     click_on "Back"
@@ -27,7 +27,7 @@ class TorneiosTest < ApplicationSystemTestCase
 
   test "should update Torneio" do
     visit torneio_url(@torneio)
-    click_on "Edit this torneio", match: :first
+    click_on "Edite este torneio", match: :first
 
     fill_in "Data fim", with: @torneio.data_fim
     fill_in "Data inicio", with: @torneio.data_inicio
@@ -42,7 +42,7 @@ class TorneiosTest < ApplicationSystemTestCase
 
   test "should destroy Torneio" do
     visit torneio_url(@torneio)
-    click_on "Destroy this torneio", match: :first
+    click_on "Destrua esse torneio", match: :first
 
     assert_text "Torneio was successfully destroyed"
   end

@@ -12,11 +12,11 @@ class PermissaosTest < ApplicationSystemTestCase
 
   test "should create permissao" do
     visit permissaos_url
-    click_on "New permissao"
+    click_on "Criar permissão"
 
     fill_in "Papel", with: @permissao.papel
     fill_in "Usuario", with: @permissao.usuario_id
-    click_on "Create Permissao"
+    click_on "Criar permissão"
 
     assert_text "Permissao was successfully created"
     click_on "Back"
@@ -24,7 +24,7 @@ class PermissaosTest < ApplicationSystemTestCase
 
   test "should update Permissao" do
     visit permissao_url(@permissao)
-    click_on "Edit this permissao", match: :first
+    click_on "Edite esta permissão", match: :first
 
     fill_in "Papel", with: @permissao.papel
     fill_in "Usuario", with: @permissao.usuario_id
@@ -36,7 +36,7 @@ class PermissaosTest < ApplicationSystemTestCase
 
   test "should destroy Permissao" do
     visit permissao_url(@permissao)
-    click_on "Destroy this permissao", match: :first
+    click_on "Destrua esta permissão", match: :first
 
     assert_text "Permissao was successfully destroyed"
   end

@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :torneios
-  resources :inscricoes
+  resources :inscricaos
   resources :usuarios
-  resources :permissoes
+  resources :permissaos
   root "torneios#index" # Página inicial
 end

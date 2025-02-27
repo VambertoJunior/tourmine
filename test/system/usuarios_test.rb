@@ -12,12 +12,12 @@ class UsuariosTest < ApplicationSystemTestCase
 
   test "should create usuario" do
     visit usuarios_url
-    click_on "New usuario"
+    click_on "Criar Usuário"
 
     fill_in "Email", with: @usuario.email
     fill_in "Nome", with: @usuario.nome
     fill_in "Tipo", with: @usuario.tipo
-    click_on "Create Usuario"
+    click_on "Criar Usuário"
 
     assert_text "Usuario was successfully created"
     click_on "Back"
@@ -25,7 +25,7 @@ class UsuariosTest < ApplicationSystemTestCase
 
   test "should update Usuario" do
     visit usuario_url(@usuario)
-    click_on "Edit this usuario", match: :first
+    click_on "Edite este usuário", match: :first
 
     fill_in "Email", with: @usuario.email
     fill_in "Nome", with: @usuario.nome
@@ -38,7 +38,7 @@ class UsuariosTest < ApplicationSystemTestCase
 
   test "should destroy Usuario" do
     visit usuario_url(@usuario)
-    click_on "Destroy this usuario", match: :first
+    click_on "Destrua esse usuário", match: :first
 
     assert_text "Usuario was successfully destroyed"
   end
